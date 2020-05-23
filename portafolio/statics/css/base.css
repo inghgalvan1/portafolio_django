@@ -1,0 +1,32 @@
+#logo
+{
+   
+   width: 1000px; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+body
+{
+    background-color: white;
+}
+
+#navbarSupportedContent
+{
+    
+margin-right: 10px;
+margin-left: auto;
+}
+
+#presentacion h1
+{
+    color: #38b6ff;
+    text-align: center;
+}
+
+#banner
+
+{
+    background-color:#38b6ff ;
+}
