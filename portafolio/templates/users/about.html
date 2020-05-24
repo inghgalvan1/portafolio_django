@@ -1,0 +1,78 @@
+{% extends 'users/base.html' %}
+
+{% block title %}<title>Educación</title>{% endblock %}
+
+
+{% block content %}
+
+{% load static %}
+
+<section id = titulo>
+
+    <h1> Educación </h1>
+
+</section>
+
+<section id= "Educa">
+
+    <div id="edul">
+        <div class="container-floud">
+            <div class="row"> 
+                       
+            </div>
+            
+            <div class="row">
+  
+               
+              <div class="mx-auto" class="col-4 col-sx-4 col-sm-4 col-md-4 col-lg-4">
+                  <div class="card  mb-3"  style="width: 18rem;">
+                    <div class="card text-center">
+                      <img src="{% static 'images/ipn.png'%}" class="card-img-top " alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">INSTITUTO POLITECNICO NACIONAL</h5>
+                        <p class="card-text"><br>Ingeniero en Comunicaciones y electrónica.</p>
+                       
+                        <p class="card-text"><small class="text-muted"><br>2009-2013</small></p>
+                      </div>  
+                      
+                    </div>
+              </div>
+              </div>
+            
+              <div class="mx-auto" class="col-4 col-sx-4 col-sm-4 col-md-4 col-lg-4">
+                  <div class="card mb-3"  style="width: 18rem;">
+                    <div class="card text-center">
+                    <img src="{% static 'images/ieu.png'%}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">INSTITUTO DE ESTUDIOS UNIVERSITARIOS</h5>
+                        <p class="card-text">Estudiante de la maestria de Ciencias computacionales y telecomunicaciones.</p>
+                        <p class="card-text"><small class="text-muted">julio 2019-sept 2020</small></p>
+                      </div>
+                    </div>  
+                    </div>
+              </div>
+
+              <div class="mx-auto" class="col-4 col-sx-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="card  mb-3"  style="width: 18rem;">
+                  <div class="card text-center">
+                  <img src="{% static 'images/uveg.png'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">UNIVERSIDAD VIRTUAL DEL ESTADO DE GUANAJUATO</h5>
+                      <p class="card-text">Estudiante de la carrera de Licenciatura en Gestión y Desarrollo Empresarial</p>
+                      <p class="card-text"><small class="text-muted">2019-actual</small></p>
+                    </div>
+                  </div>  
+                  </div>
+            </div>
+         </div> 
+            
+      </div>
+  </section>
+
+
+
+</section>
+
+{% endblock %}
+
+

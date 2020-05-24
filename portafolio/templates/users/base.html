@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
     <link rel="stylesheet" href="{% static 'css/base.css'%}">
 
     {% block title %}{% endblock %}
@@ -15,7 +16,7 @@
 </head>
 <body>
 
-    <!--cabecera menu-->
+<!--cabecera menu-->
 <header>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,21 +26,21 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'Home' %}">Inicio </a>
+              <a class="nav-link" href="{% url 'Home' %}"><i class="far fa-address-book"></i> Inicio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'Educacion' %}">Educación</a>
+              <a class="nav-link" href="{% url 'Educacion' %}"><i class="fas fa-book-reader"></i> Educación</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'Certificaciones' %}">Certificaciones</a>
+              <a class="nav-link" href="{% url 'Certificaciones' %}"><i class="fas fa-award"></i> Certificaciones</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'Experiencia' %}">Experiencia</a>
+                <a class="nav-link" href="{% url 'Experiencia' %}"><i class="far fa-address-card"></i> Experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'Contacto' %}">Contacto</a>
+                <a class="nav-link" href="{% url 'Contacto' %}"><i class="fas fa-phone-alt"></i> Contacto</a>
               </li>
 
           </ul>
@@ -50,7 +51,7 @@
     <div id="logoone">
         <div class="container-floud">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                <div class="col-12 col-sm-3 col-md-6 col-lg-12 ">
                     <img src="{% static 'images/1.png'%}"alt="banner" id="logo"> 
                  </div>
             </div> 
@@ -60,11 +61,44 @@
 </section>
 
 
-     <!--contenido-->
+<!--contenido-->
      {% block content %}
 
      {% endblock %}
 
+ <!--footer-->
+     <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 col-sm-2 col-md-3 col-lg-3">
+              <p><i class="fas fa-copyright"></i> Héctor Galván 2020 </p>
+            </div>
+            <div class="col-2 col-sm-1 col-md-2 col-lg-2"><p> Contactame </p>
+            </div>
+
+            <div class="col-2 col-sm-1 col-md-2 col-lg-2">
+              <a class="nav-link" href="http://www.linkedin.com/in/inghgalvan"><i class="fab fa-linkedin"></i></a>
+             </div> 
+
+             <div class="col-2 col-sm-1 col-md-2 col-lg-2">
+              <a class="nav-link" href="http://www.github.com/inghgalvan1"><i class="fab fa-github-square"></i></a>
+             </div> 
+
+             <div class="col-2 col-sm-1 col-md-2 col-lg-2">
+              <a class="nav-link" href="http://www.twitter.com/osouzumakijr"><i class="fab fa-twitter-square"></i></a>
+             </div> 
+
+
+          </div>
+         
+
+
+
+
+         </div>
+     </footer>
+
+     
      <script src="https://kit.fontawesome.com/4000791b54.js"></script> 
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

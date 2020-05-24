@@ -1,0 +1,45 @@
+{% extends 'users/base.html' %}
+
+{% block title %}<title>Portafolio</title>{% endblock %}
+
+
+{% block content %}
+
+{% load static %}
+
+<section id = titulo >
+
+    <h1> Experiencia</h1>
+
+</section>
+
+<div id=" experiencias ">
+    <div class="container-floud">
+         <div class="row">
+           <div class="mx-auto" class="col-6 col-sx-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="card"  style="width: 18rem;">
+                  <img src="{% static 'images/ixatek.png'%}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">IXATEK</h5>
+                    <p class="card-text">Ingeniero en soporte e implementacion de equipos cisco</p>
+                    <a href="http://www.ixatek.com" class="btn btn-primary">ir a sitio web</a>
+                  </div>
+                </div>
+          </div>
+        
+          <div class="mx-auto" class="col-6 col-sx-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="card"  style="width: 18rem;">
+                  <img src="{% static 'images/Original.png'%}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Electronica Interativa</h5>
+                    <p class="card-text"><br>Desarrollador web</p>
+                    <a href="http://www.electronicainteractiva.com" class="btn btn-primary">ir a sitio web</a>
+                  </div>
+                </div>  
+          </div>
+     </div> 
+        
+  </div>
+    
+{% endblock %}
+

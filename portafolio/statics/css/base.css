@@ -1,7 +1,8 @@
+/*------cabecera -----*/
 #logo
 {
    
-   width: 1000px; 
+   width: 70%; 
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -19,10 +20,12 @@ margin-right: 10px;
 margin-left: auto;
 }
 
-#presentacion h1
+#titulo h1
 {
     color: #38b6ff;
     text-align: center;
+    text-decoration:underline;
+    font-family: 'Anton'; font-size: 44px;
 }
 
 #banner
@@ -30,3 +33,49 @@ margin-left: auto;
 {
     background-color:#38b6ff ;
 }
+
+#footer
+{
+    background-color:#38b6ff ;
+    margin-top: 10px;
+}
+
+#footer p
+{
+    color:white;
+}
+
+footer .fab 
+{
+    color: white;
+    font-size: 30px;
+}
+
+a
+{
+    color: white;
+}
+/*------home presentacion -----*/
+
+#logo_pre
+{
+    max-width: 100%;
+}
+
+#presentacion h2
+{
+    color: #38b6ff;
+    text-align: center;
+    text-decoration:underline;
+    font-family: 'Anton'; font-size: 30px;
+}
+
+#presentacion p
+{
+    font-family: 'Anton';
+    color: #38b6ff;
+    font-size: 22px;
+
+    
+}
+

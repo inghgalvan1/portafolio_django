@@ -1,0 +1,37 @@
+
+{% extends 'users/base.html' %}
+
+{% block title %}<title>Portada</title>{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<section id="titulo"> <h1> Presentación </h1></section>
+       
+
+<section id = "presentacion">
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col">
+            <img src="{% static 'images/yo'%}"alt="banner" id="logo_pre"> 
+        </div>
+
+       <div class="col">
+            <h2>Un poco sobre mi</h2>
+
+            <p class="text-justify">Ingeniero en comunicaciones y electrónica, amante  de las redes de computadora y de programar, en busca de oportunidades como freelance en el área  del desarrollo web</p>
+   
+            
+        </div>
+    </div>
+</div>
+    <!--Presentacion-->
+
+</section>
+
+
+{% endblock %}
+
+
+
